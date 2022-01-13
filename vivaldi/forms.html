@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<h3>Admission</h3>
+
+<form action="#">
+<div class="divstyle">
+
+    <div class="divstyle">
+    <label> First name</label> <br>
+    <input class="inputstyle" type="text" name="fname" placeholder="John">
+    </div>
+    <div class="divstyle">
+    <label> Second Name</label><br>
+    <input class="inputstyle" type="text" name="sname" placeholder="Doe">
+    </div>
+    <label> Other Name</label>
+    <input class="inputstyle" type="text" name="oname" placeholder="Kamau">
+
+</div>
+    <div class="divstyle">
+
+        <label>Occupation</label>
+        <input class="inputstyle" type="text" name="occupation" placeholder="Software Developer">
+
+        <label>Gender </label>
+        <select class="inputstyle" name="gender">
+            <option> Male</option>
+            <option> Female</option>
+            <option> Other</option>
+        </select>
+
+
+        <label>Email Address</label>
+        <input id="emailstyle" type="email" name="eaddress" placeholder="johndoe@example.com">
+
+    </div>
+
+    <div class="divstyle">
+        <label>Phone Number</label>
+        <input class="inputstyle" type="tel" name="pnumber"  >
+
+        <label>Github Link</label>
+        <input class="inputstyle" type="url" name="githublink">
+
+        <label>Date of Birth</label>
+        <input class="inputstyle" type="date" name="dob">
+
+    </div>
+
+     <div class="divstyle">
+         <label>Programing Stack</label>
+         <span>
+         <input type="radio" name="program" value="html">
+         <label>HTML</label>
+         <input type="radio" name="program" value="css">
+         <label>CSS</label>
+         <input type="radio" name="program" value="PHP">
+         <label>PHP</label>
+         </span>
+
+         <label>Interest </label>
+         <span>
+             <input type="checkbox" name="fullstack" value="fullstack">
+             <label>Full Stack</label>
+              <input type="checkbox" name="frontend" value="frontend">
+             <label>Front End</label>
+              <input type="checkbox" name="backend" value="backend">
+             <label>Backend</label>
+
+         </span>
+
+
+     </div>
+
+<div class="divstyle">
+
+    <label>Upload your CV</label>
+    <input class="inputstyle" type="file" name="doc">
+
+
+</div>
+
+    <div class="divstyle">
+        <label>Any other Information</label><br>
+        <textarea name="aoi" cols="30" rows="10"></textarea>
+    </div>
+    <div class="divstyle">
+
+        <input type="submit">
+        
+    </div>
+
+    
+    
+</form>
+
+
+</body>
+</html>
