@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+ <h3>Fill this Form</h3>
+<form action="#">
+    <div>
+      <label>Full name </label><br>
+        <input class="inputstyle" type="text" name="fname" placeholder="John">
+    </div>
+    <div>
+        <label>Second name </label><br>
+        <input class="inputstyle" type="text" name="sname" placeholder="Doe">
+    </div>
+
+    <div>
+        <label>Email address</label><br>
+        <input class="inputstyle" type="email" name="mail" placeholder="johndoe@example.com">
+    </div>
+    <div>
+        <label>Phone number</label><br>
+        <input class="inputstyle" type="tel" name="pnumber" placeholder="+254 785 859 449">
+    </div>
+    <div>
+        <label>Github Link</label><br>
+        <input class="inputstyle" type="url" name="github" placeholder="www.github.com">
+    </div>
+    <div>
+        <label>Date of Birth</label><br>
+        <input class="inputstyle" type="date" name="dob">
+    </div>
+    <div>
+        <label>Location</label><br>
+        <select class="inputstyle" name="location" >
+            <option value="nairobi">Nairobi</option>
+            <option value="nakuru">Nakuru</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="eldoret">Eldoret</option>
+            <option value="mombasa">Mombasa</option>
+        </select>
+    </div>
+
+    <div>
+        <label >Gender</label><br>
+        <input type="radio"  name="gender" value="female" >
+        <label>Female</label>
+        <input type="radio"  name="gender" value="male" >
+        <label>Male</label>
+
+    </div>
+
+    <div>
+        <label>Stack</label><br>
+        <input type="checkbox"  name="stack" value="frontend"  >
+        <label>Front end</label>
+        <input type="checkbox"  name="stack" value="backend" >
+        <label>Back end</label>
+        <input type="checkbox"  name="stack" value="fullstack" >
+        <label>Full stack</label>
+    </div>
+
+    <div>
+        <label>Any other information</label><br>
+        <textarea name="aoi" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+        <input id="thebutton" type="submit" value="Submit">
+    </div>
+
+</form>
+
+</body>
+</html>
