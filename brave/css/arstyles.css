@@ -1,0 +1,55 @@
+.arlinks{
+
+    list-style-type: none;
+     background-color: darkolivegreen;
+     margin: 0;
+     padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    padding: 15px 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+
+}
+
+nav li a:hover{
+    background-color: greenyellow;
+}
+
+.styleimages{
+
+    background-image: url("../images/zebra.jpeg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+
+}
+
+.artexts{
+
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
+.arbutton{
+   padding: 12px 12px;
+    width: 60%;
+    border-radius: 12px;
+    background-color: darkgray;
+    color: white;
+
+}
