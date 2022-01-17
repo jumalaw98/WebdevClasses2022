@@ -6,6 +6,10 @@
     padding: 0;
     overflow: hidden;
 }
+nav {
+    margin: 3px;
+    padding: 3px;
+}
 
 nav li {
     float: left;
@@ -43,4 +47,46 @@ nav li a:hover {
     background-color: coral;
     border-radius: 12px;
 
+}
+
+.flexbox{
+    display: flex;
+}
+
+.center{
+    text-align: center;
+}
+
+.roundimage{
+    background-image: url("../images/water1.jpeg");
+    width: 200px;
+    height: 150px;
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spacer {
+    margin: 10px;
+    padding: 12px;
+}
+
+.flexbox >div {
+    margin: 8px;
+    padding: 5px;
+
+}
+
+.flex-box{
+    display: flex;
+}
+
+#gallery img {
+    border-radius: 50%;
+}
+
+section {
+    margin: 3px;
+    padding: 3px;
 }

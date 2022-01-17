@@ -53,3 +53,41 @@ nav li a:hover{
     color: white;
 
 }
+
+nav , section{
+    margin: 3px;
+    padding: 2px;
+}
+
+.center{
+    text-align: center;
+}
+
+.flexbox{
+    display: flex;
+}
+
+.flex-contain{
+    display: flex;
+}
+
+.flex-contain > div {
+    margin: 3px;
+    padding: 3px;
+
+}
+
+#gallery img{
+    border-radius: 50%;
+
+}
+
+.flexbox >div{
+    margin: 2px;
+    padding: 2px;
+}
+
+#about p {
+    border: 1px solid green;
+    padding: 15px;
+}
