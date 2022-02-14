@@ -27,26 +27,28 @@
                      <div class="text-center">
                          <h1 class="h4 grey mb-4">Create an Account</h1>
                      </div>
-                     <form action="">
+                     <form action="handle_register.php" method="post">
                          <div class="row m-3">
                              <div class="col-sm-6">
-                                 <input class="form-control rounded-pill" type="text" name="firstName" placeholder="First Name">
+                                 <input class="form-control rounded-pill" type="text" name="firstName" placeholder="First Name" required>
                              </div>
                              <div class="col-sm-6">
-                                 <input  class="form-control rounded-pill" type="text" name="secondName" placeholder="Second Name">
+                                 <div class="col-sm-12">
+                                 <input  class="form-control rounded-pill" type="text" name="secondName" placeholder="Second Name" required>
+                                 </div>
                              </div>
                          </div>
 
                          <div class="row m-3">
-                             <input class="form-control rounded-pill" type="email" name="emailAddress" placeholder="Email Address">
+                             <input class="form-control rounded-pill" type="email" name="emailAddress" placeholder="Email Address" required>
                          </div>
 
                          <div class="row m-3">
                              <div class="col-sm-6">
-                                 <input class="form-control rounded-pill" type="password" name="password" placeholder="Password">
+                                 <input class="form-control rounded-pill" type="password" name="password" placeholder="Password" required>
                              </div>
                              <div class="col-sm-6">
-                                 <input class="form-control rounded-pill" type="password" name="confirmPassword" placeholder="Confirm Password">
+                                 <input class="form-control rounded-pill" type="password" name="confirmPassword" placeholder="Confirm Password" required>
                              </div>
                          </div>
 
@@ -61,7 +63,7 @@
                              <a href="" class="small text-center" >Forgot Password? </a>
                          </div>
                          <div class="row m-3">
-                             <a href="" class="text-primary small text-center">Already Have an account? Login</a>
+                             <a href="login.php" class="text-primary small text-center">Already Have an account? Login</a>
                          </div>
 
 

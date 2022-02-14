@@ -24,27 +24,27 @@
                          <div class="text-center">
                              <h4 class="grey">Create an Account</h4>
                          </div>
-                         <form action="#">
+                         <form action="handle_registration.php" method="post">
                              <div class="row mb-3">
                                  <div class="col-sm-6">
-                                     <input class="form-control rounded-pill" type="text" name="firstName" placeholder="First Name">
+                                     <input class="form-control rounded-pill" type="text" name="firstName" placeholder="First Name" required>
                                  </div>
                                  <div class="col-sm-6">
-                                     <input class="form-control rounded-pill" type="text" name="secondName" placeholder="Second Name">
+                                     <input class="form-control rounded-pill" type="text" name="secondName" placeholder="Second Name" required>
                                  </div>
 
                              </div>
                              <div class="row mb-3">
                                  <div>
-                                 <input class="form-control rounded-pill" type="email" name="emailAddress" placeholder="Email Address">
+                                 <input class="form-control rounded-pill" type="email" name="emailAddress" placeholder="Email Address" required>
                                  </div>
                              </div>
                              <div class="row mb-3">
                                  <div class="col-sm-6">
-                                     <input class="form-control rounded-pill" type="password" name="password" placeholder="Password">
+                                     <input class="form-control rounded-pill" type="password" name="password" placeholder="Password" required>
                                  </div>
                                  <div class="col-sm-6">
-                                     <input class="form-control rounded-pill" type="password" name="confirmPass" placeholder="Confirm Password">
+                                     <input class="form-control rounded-pill" type="password" name="confirmPass" placeholder="Confirm Password" required>
                                  </div>
                              </div>
 
