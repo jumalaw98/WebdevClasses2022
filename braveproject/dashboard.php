@@ -37,7 +37,7 @@
                 <hr>
 
                 <li class="nav-item navstyles">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="addstudent.php">
                         <i class="fa fa-users text-white"> </i>
                         <span class="text-white"> Participants </span>
                     </a>

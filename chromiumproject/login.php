@@ -24,7 +24,7 @@
                     <div class="text-center">
                         <h4 class="grey">Karibu Tena!</h4>
                     </div>
-                    <form action="#">
+                    <form action="handlelogin.php" method="post">
                         <div class="row mb-3">
                             <div>
                             <input class="form-control rounded-pill" type="email" name="emailAddress" placeholder="Email Address">
@@ -37,7 +37,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <input type="submit" name="register" class= "rounded-pill btn btn-primary" value="Login">
+                            <input type="submit" name="login" class= "rounded-pill btn btn-primary" value="Login">
                         </div>
                         <hr>
                         <div class="row mb-3">
