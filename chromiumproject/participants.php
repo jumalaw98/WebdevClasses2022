@@ -25,7 +25,7 @@ include "header.php";
                     </div>
                     <div class="modal-body">
 
-                        <form action="" method="post">
+                        <form action="handle_addstudent.php" method="post" enctype="multipart/form-data">
                             <div class="row p-2">
                                 <div class="col-md-12">
                                     <label class="form-label grey">Full Name</label>
@@ -79,14 +79,13 @@ include "header.php";
 
 
 
-                        </form>
-
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <input type="submit" class="col-6 btn btn-outline-danger" value="SUBMIT">
+                        <input type="submit" name="submit" class="col-6 btn btn-outline-danger" value="SUBMIT">
                     </div>
+
+                    </form>
                 </div>
             </div>
         </div>
