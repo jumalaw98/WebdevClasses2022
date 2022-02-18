@@ -28,7 +28,7 @@
                 <hr>
 
                 <li class="nav-item navstyles">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="dashboard.php">
                         <i class="fa fa-dashboard text-white "> </i>
                         <span class="text-white">  Dashboard </span>
                     </a>
@@ -68,6 +68,12 @@
                     <a class="nav-link" href="#">
                         <i class="fa fa-wrench text-white"> </i>
                         <span class="text-white"> Settings </span>
+                    </a>
+                </li>
+                <li class="nav-item navstyles">
+                    <a class="nav-link" href="logout.php">
+                        <i class="fa fa-mail-forward text-white"> </i>
+                        <span class="text-white"> Logout </span>
                     </a>
                 </li>
 

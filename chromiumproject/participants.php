@@ -95,4 +95,75 @@ include "header.php";
 
 </div>
 
+<div class="row m-2 p-2">
+<?php
+include "config.php";
+
+$sql = "SELECT * FROM `students`";
+
+$result = mysqli_query($link,$sql);
+
+if ($result){
+
+    $data = mysqli_num_rows($result);
+
+       if ($data>0){
+
+           echo "<table class='table table-striped table-hover'>";
+           echo "<tr>";
+           echo "<th>#</th>";
+           echo "<th>Full Name</th>";
+           echo "<th>Email Address</th>";
+           echo "<th>DoB</th>";
+           echo "<th>Gender</th>";
+           echo "<th>Actions</th>";
+           echo "</tr>";
+           while ($row=mysqli_fetch_array($result)){
+               echo "<tr>";
+               echo "<td>".$row['id']."</td>" ;
+               echo "<td>".$row['fullName']."</td>" ;
+               echo "<td>".$row['emailAddress']."</td>" ;
+               echo "<td>".$row['dob']."</td>" ;
+               echo "<td>".$row['gender']."</td>" ;
+               echo " <td>
+                   
+                    <a class='m-2' href='delete.php?id=".$row['id']."'><span class='fa fa-trash'></span></a>
+                    <a class='m-2' href='update.php?id=".$row['id']."'><span class='fa fa-pencil'></span></a>
+                    <a class='m-2' href='view.php?id=".$row['id']."'><span class='fa fa-eye'></span></a>
+
+                    </td>";
+
+               echo "</tr>";
+
+
+
+           }
+
+
+           echo "</table>";
+
+
+
+
+       }else{
+           echo "<p class='alert alert-primary'>No Record was found in the database</p>";
+       }
+
+
+
+}else{
+    echo "Error executing query $sql".mysqli_error($link);
+}
+
+
+
+
+
+
+
+?>
+
+
+
+</div>
 

@@ -1,4 +1,5 @@
 <?php
+include "header.php";
 include "config.php";
 if(isset($_POST["submit"])){
 
@@ -28,23 +29,23 @@ if(isset($_POST["submit"])){
     $result = mysqli_query($link,$sql);
 
     if (move_uploaded_file($tempname,$folder)){
-        echo "Image has been uploaded";
+        echo "<p class='alert alert-success'>Image has been uploaded</p>";
     }else{
         echo "Error uploading image";
     }
 
 
     if (move_uploaded_file($cvtemp,$cvfolder)){
-        echo "CV uploaded successfully";
+        echo "<p class='alert alert-primary'>CV uploaded successfully</p>";
     }else{
         echo "Error uploading your cv";
     }
 
 
     if ($result){
-        echo "Record added successfully";
+        echo "<p class='alert alert-danger'>Record added successfully!</p>";
+        echo "<a href='documents.php' class='btn btn-primary col-md-4'>BACK</a>";
 
-       // header("location:addstudent.php");
     }else{
         echo "error executing this query $sql".mysqli_error($link);
     }
