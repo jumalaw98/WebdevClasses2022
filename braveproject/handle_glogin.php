@@ -6,10 +6,10 @@ require "google-api/vendor/autoload.php";
 $gClient = new Google_Client();
 
 
-$gClient -> setClientId("890462044666-s8nket30h2iblgmvfeun5mdim84kjfuv.apps.googleusercontent.com");
-$gClient ->setClientSecret("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");
+$gClient -> setClientId("your id");
+$gClient ->setClientSecret("your secret");
 $gClient ->setApplicationName("Brave Login");
-$gClient ->setRedirectUri("http://localhost/WebdevClasses2022/braveproject/dashboard.php");
+$gClient ->setRedirectUri("url yako");
 $gClient ->addScope("https://www.googleapis.com/auth/plus.login  https://www.googleapis.com/auth/userinfo.email");
 
 $login_url = $gClient ->createAuthUrl();
