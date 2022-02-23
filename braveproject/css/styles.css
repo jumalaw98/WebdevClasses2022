@@ -1,6 +1,10 @@
 
 .bg-register-image{
-    background: url("https://unsplash.com/photos/VhOAxpxQMWI") center;
+    background: url("../images/login.svg") center;
     background-size: cover;
 
+}
+
+.bg-login-image{
+    background: url("../images/login.jpeg");
 }

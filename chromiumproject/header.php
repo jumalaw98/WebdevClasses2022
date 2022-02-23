@@ -1,3 +1,9 @@
+<?php
+
+$username = $_SESSION["username"];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +32,7 @@
                 <hr>
 
                 <li class="nav-item stylenav">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="dashboard.php">
                         <i class="fa fa-dashboard fa-lg text-white"></i>
                         <span class="text-white">Dashboard</span>
 
@@ -43,7 +49,7 @@
                 </li>
                 <li class="nav-item stylenav">
                     <a class="nav-link" href="#">
-                        <i class="fa fa-cogs fa-lg text-white"></i>
+                        <i class="fa fa-clipboard fa-lg text-white"></i>
                         <span class="text-white">Components</span>
 
                     </a>
@@ -63,15 +69,15 @@
                 </li>
                 <hr>
                 <li class="nav-item stylenav">
-                    <a class="nav-link" href="#">
-                        <i class="fa fa-clipboard fa-lg text-white"></i>
-                        <span class="text-white">Forms</span>
+                    <a class="nav-link" href="reset.php">
+                        <i class="fa fa-cogs fa-lg text-white"></i>
+                        <span class="text-white">Reset Password</span>
                     </a>
                 </li>
                 <li class="nav-item stylenav">
-                    <a class="nav-link" href="#">
-                        <i class="fa fa-wrench fa-lg text-white"></i>
-                        <span class="text-white">Settings</span>
+                    <a class="nav-link" href="logout.php">
+                        <i class="fa fa-mail-forward fa-lg text-white"></i>
+                        <span class="text-white">Logout</span>
 
                     </a>
 
@@ -133,7 +139,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">
-                                            John Doe |
+                                           <?php echo $username; ?> |
                                         </a>
                                     </li>
                                     <li class="nav-item">

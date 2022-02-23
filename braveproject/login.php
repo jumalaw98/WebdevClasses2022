@@ -1,10 +1,13 @@
-
+<?php
+require "handle_glogin.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="css/dashstyles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -18,10 +21,10 @@
 <body class="bg-primary">
 <div class="container ">
     <div class="card m-3">
-        <div class="card-body">
+        <div class="card-body bg-white">
             <div class="row">
-                <div class="col-lg-5 bg-register-image">
-                    image here
+                <div class="col-lg-5">
+                   <div> <img src="images/login.jpeg" alt="Login" width="400"></div>
                 </div>
 
                 <div class="col-lg-7">
@@ -47,9 +50,9 @@
                         </div>
                         <hr>
                         <div class="row m-3">
-                            <a href="" class="rounded-pill  btn btn-danger">
-                                <span class="fa fa-google"></span>
-                                   Login with Google? </a>
+                            <button onclick="window.location='<?php echo $login_url; ?>'" type="button" class="rounded-pill  btn btn-danger" >  <span class="fa fa-google"></span>
+                                Login with Google? </a></button>
+
                         </div>
                         <div class="row m-3">
                             <a href="" class="small text-center" >Forgot Password? </a>

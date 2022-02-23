@@ -65,7 +65,7 @@
                 <hr>
 
                 <li class="nav-item navstyles">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="reset.php">
                         <i class="fa fa-wrench text-white"> </i>
                         <span class="text-white"> Settings </span>
                     </a>

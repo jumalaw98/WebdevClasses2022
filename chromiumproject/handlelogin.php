@@ -24,6 +24,7 @@ if (isset($_POST['login'])){
                 $id = $row['id'];
                 $emailAddress = $row["emailAddress"];
                 $password = $row["password"];
+                $firstName = $row["firstName"];
 
                 // verify the password
                 if (password_verify($userPassword,$password)){
@@ -31,7 +32,8 @@ if (isset($_POST['login'])){
                     session_start();
                     $_SESSION["loggedin"]=true;
                     $_SESSION["id"] = $id;
-                    $_SESSION["username"]=$emailAddress;
+                    $_SESSION["username"]=$firstName;
+
 
                     header("location:dashboard.php");
 

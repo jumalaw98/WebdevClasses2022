@@ -35,7 +35,7 @@ if (isset($_POST["register"])){
 
         if ($result){
             echo "You have been registered";
-            header("location:login.php");
+            header("location:index.php");
 
         }else{
             echo "Error executing query".mysqli_error($link);

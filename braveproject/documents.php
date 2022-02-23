@@ -1,4 +1,15 @@
-<?php include "header.php"?>
+<?php
+//check if user is logged in.
+session_start();
+
+if (!isset($_SESSION["loggedin"]) or  $_SESSION["loggedin"]!==true){
+    header("location:login.php");
+    exit();
+}
+
+include "header.php"
+
+?>
 
 
 <div class="row m-2">
@@ -7,9 +18,9 @@
     </div>
 
     <div class="col-6">
-        <button type="button" class="btn btn-primary float-end">
+        <a href="generatepdf.php"  class="btn btn-primary float-end">
             Download Report
-        </button>
+        </a>
     </div>
 
 </div>
@@ -71,6 +82,27 @@ if ($result){
 }else{
     echo "<p class='alert alert-warning'>error executing your query $sql</p>".mysqli_error($link);
 }
+
+
+
+
+
+
+// THE PDF DOWNLOAD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
 

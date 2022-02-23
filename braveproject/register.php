@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
+
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/dashstyles.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,8 +21,9 @@
     <div class="card m-3">
         <div class="card-body">
             <div class="row">
-                <div class="col-lg-5 bg-register-image">
-                    image here
+                <div class="col-lg-5">
+
+                    <div class="bg-register-image"></div>
                 </div>
 
                  <div class="col-lg-7">

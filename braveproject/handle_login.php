@@ -5,10 +5,10 @@ include "config.php";
 session_start();
 
 //check if user is logged in using sessions
-//if (isset($_SESSION["loggedin"]) and $_SESSION["loggedin"]==true ){
-//    header("location:dashboard.php");
-//    exit();
-//}
+if (isset($_SESSION["loggedin"]) and $_SESSION["loggedin"] === true ){
+    header("location:dashboard.php");
+    exit();
+}
 
 
 

@@ -15,10 +15,12 @@
 <body class="bg-primary">
       <div class="container p-4">
           <div class="card">
-              <div class="card-body">
+              <div class="card-body bg-white">
                  <div class="row">
                      <div class="col-lg-5">
-                         image here
+                         <div>
+                             <img c src="images/flower.jpg" alt="Login" width="400" height="400">
+                         </div>
                      </div>
                      <div class="col-lg-7">
                          <div class="text-center">
@@ -62,7 +64,7 @@
                              <a class="small" href="">Forgot password?</a>
                          </div>
                          <div class="text-center">
-                             <a class="small" href="login.php">Already have an account? Login</a>
+                             <a class="small" href="index.php">Already have an account? Login</a>
                          </div>
 
 

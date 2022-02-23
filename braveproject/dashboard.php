@@ -1,4 +1,20 @@
-<?php include "header.php"?>
+<?php
+//check if user is logged in.
+include "handle_glogin.php";
+
+
+//if (!isset($_SESSION["loggedin"]) or  $_SESSION["loggedin"]!==true){
+  //  header("location:login.php");
+   // exit();
+//}
+
+include "header.php";
+echo  $_SESSION['firstname'];
+echo  $_SESSION['lastname'];
+echo $_SESSION['email'];
+echo "<img src='".$_SESSION['user_image']."'>"
+
+?>
 
             <div class="row m-2">
                  <div class="col-6">

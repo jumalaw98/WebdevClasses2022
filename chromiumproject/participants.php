@@ -1,5 +1,17 @@
 <?php
+
+session_start();
+
+// check if user has logged in?
+
+if (!isset($_SESSION["loggedin"]) or $_SESSION["loggedin"]!==true ){
+
+    header("location:index.php");
+    exit();
+}
+
 include "header.php";
+
 ?>
 
 <div class="row m-2 p-2 ">
